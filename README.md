@@ -8,21 +8,11 @@
 
 ## Building the database
 
-Define environment variables:
-
-``` sh
-export PGHOST=data.cs.jmu.edu
-export PGDATABASE=absent
-export PGUSER=jmu_username
-export PGPASSWORD=student_number
-```
-
-Run the following commands:
-
-``` sh
-psql < create.sql
-psql < alter.sql
-```
+1. Set up all tables and keys in DBDiagram.
+2. Converted incorrect code from DBD lang to Postgres lang String -> VARCHAR
+3. Seperated Primary and Foreign keys from same document into alter.sql
+4. Ran both create.sql and alter.sql in our teams querry in PGAdmin.
+5. Made sure tables existed in PGAdmin.
 
 ## Changes to EER model
 
